@@ -7,12 +7,7 @@ public class Account {
     }
 
     public boolean checkNameToEmboss() {
-        boolean isValidName = false;
-        /*
-             Этот метод должен проверять, что сохранённая через конструктор строка соответствует требованиям.
-             Если строка удовлетворяет условиям, метод возвращает true, иначе — false.
-         */
-        return isValidName;
+        return name.matches("^\\S+\\s\\S+$(?<=^.{3,19}$)") ;
     }
 
 }
