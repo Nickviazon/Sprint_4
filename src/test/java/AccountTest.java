@@ -29,6 +29,8 @@ public class AccountTest {
                 {"Karl Third Karl", false}, // более 2 слов разделенных пробелами
                 {"  KarlThird", false}, // пробел вместо первого слова
                 {"KarlThird  ", false}, // пробел вместо второго слова
+                {" KarlThird", false}, // пробел вначале с единственным словом
+                {"KarlThird ", false} // пробел вконце с единственным словом
         };
     }
 
