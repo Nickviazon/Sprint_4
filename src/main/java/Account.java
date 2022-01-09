@@ -7,7 +7,10 @@ public class Account {
     }
 
     public boolean checkNameToEmboss() {
-        return name.matches("^\\S+\\s\\S+$(?<=^.{3,19}$)") ;
+        boolean isValidName = false;
+        if (name != null) {
+            isValidName = name.matches("^\\S+\\s\\S+$(?<=^.{3,19}$)");
+        }
+        return isValidName;
     }
-
 }
